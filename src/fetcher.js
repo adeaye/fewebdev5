@@ -2,8 +2,9 @@ import axios from "axios";
 
 export const fetchData = async () => {
     try {
-        const response = await axios.get('https://webdev-be.vercel.app/products');
-        return response.data.data;
+        // const response = await axios.get('https://webdev-be.vercel.app/products');
+        const response = await axios.get('https://fakestoreapi.com/products');
+        return response.data;
 
     } catch (error) {
         throw error;

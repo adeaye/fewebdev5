@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 cardElement.classList.add('col-md-3');
                 cardElement.innerHTML = `
                 <div class="card">
+                <img src="${product.image}" class="card-img-top" alt="img">
                     <div class="card-body">
-                        <h5 class="card-title">${product.name}</h5>
-                        <p class="card-text">${product.currency} ${product.price}</p>
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">${product.price}</p>
                     </div>
                     </div>
                     `
